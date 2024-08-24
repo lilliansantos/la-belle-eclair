@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Éclair</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edwardian+Script+ITC&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4e342e; /* Dark brown text */
+            background-color: #fffaf0; /* Light beige background slightly lighter */
+        }
+        header {
+            background-color: #6d4c41; /* Dark brownish-orange */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header img.logo {
+            position: absolute;
+            left: 40px;
+            top: 70%;
+            transform: translateY(-50%);
+            height: 90px; /* Adjust logo size as needed */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 4em; /* Increased font size */
+            font-family: 'Edwardian Script ITC', cursive;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 25px; /* Increased padding */
+            font-size: 1.5em; /* Increased font size */
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #5d4037; /* Darker brownish-orange */
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 50px; /* Increased margin-bottom */
+        }
+        .section h2 {
+            color: #6d4c41; /* Dark brownish-orange */
+            font-size: 3.5em; /* Increased font size */
+            border-bottom: 4px solid #6d4c41; /* Dark brownish-orange */
+            padding-bottom: 15px; /* Increased padding */
+            font-family: 'Edwardian Script ITC', cursive;
+        }
+        .section p {
+            font-size: 1.5em; /* Increased font size */
+            line-height: 1.8;
+            color: #6d4c41; /* Darker beige text */
+        }
+        .menu-item {
+            margin-bottom: 40px; /* Increased margin-bottom */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #d7ccc8; /* Light brownish-orange/beige background */
+            padding: 20px; /* Increased padding */
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.03);
+        }
+        .menu-item img {
+            float: left;
+            max-width: 20%; /* Adjusted width for better layout */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .menu-item h3 {
+            margin: 0;
+            color: #6d4c41; /* Dark brownish-orange */
+            font-size: 2.5em; /* Increased font size */
+            font-family: 'Edwardian Script ITC', cursive;
+        }
+        .menu-item p {
+            margin: 15px 0; /* Increased margin */
+            font-size: 1.3em; /* Increased font size */
+            color: #6d4c41; /* Darker beige text */
+        }
+        footer {
+            background-color: #6d4c41; /* Dark brownish-orange */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo La Belle Éclair" class="logo"> <!-- Logo added -->
+        <h1>La Belle Éclair</h1>
+        <nav>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#menu">Menu</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="sobre" class="section">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo ao <strong>La Belle Éclair</strong>, onde oferecemos uma experiência única em uma atmosfera vintage encantadora. Localizados no coração da cidade, somos apaixonados por cafés artesanais e doces que remetem ao charme das décadas passadas. Nosso objetivo é proporcionar um ambiente acolhedor para você relaxar e desfrutar de momentos especiais com nossos produtos cuidadosamente preparados.</p>
+            <p>Com uma decoração que mistura tons vintage e uma paleta de cores delicada, cada detalhe foi pensado para criar uma experiência visual e sensorial única. Venha nos visitar e descubra o sabor do verdadeiro prazer em cada xícara de café e sobremesa.</p>
+            <p>Nossa equipe é composta por baristas e confeiteiros dedicados, comprometidos em oferecer a melhor qualidade e sabor em cada produto.</p>
+        </section>
+
+        <section id="menu" class="section">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <img src="imagens/brownie.jpg" alt="Brownie">
+                <h3>Brownie</h3>
+                <p>Um brownie com crosta levemente crocante e interior úmido. Feito com cacau de alta qualidade e pedaços de chocolate meio amargo, perfeito para acompanhar um café ou uma sobremesa especial.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/bolinholimao.jpg" alt="Bolinho de Limão">
+                <h3>Bolinho de Limão</h3>
+                <p>Um bolinho macio e arejado, feito com raspas e suco de limão fresco,ideal para acompanhar um café ou chá da tarde.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/tortamaça.jpg" alt="Torta de Maçã">
+                <h3>Torta de Maçã</h3>
+                <p>Uma torta clássica com fatias finas de maçã caramelizadas em açúcar mascavo e canela. Servida quente, é perfeita com uma bola de sorvete de baunilha ou chantilly suave.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/cheesecake.jpg" alt="Cheesecake de Frutas Vermelhas">
+                <h3>Cheesecake de Frutas Vermelhas</h3>
+                <p>Cheesecake cremoso com base de biscoito amanteigado, coberto com calda de frutas vermelhas frescas, equilibrando doce e ácido.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/eclair.jpg" alt="Éclair de Chocolate">
+                <h3>Éclair de Chocolate</h3>
+                <p>Éclair clássica com creme de chocolate aveludado em massa choux crocante, coberta generosamente com chocolate, adicionando doçura e uma textura luxuosa, ideal para momentos elegantes e refinados.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/macaron.jpg" alt="Macaron de Framboesa">
+                <h3>Macaron de Framboesa</h3>
+                <p>Macaron delicado com recheio de framboesa fresco e levemente ácido, combinando crocância exterior com interior suave. Perfeito para acompanhar café ou chá da tarde.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/tiramisu.jpg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <p>Um clássico italiano, o tiramisu é feito com camadas de biscoito champagne embebido em café expresso e mascarpone cremoso. Polvilhado com cacau em pó e decorado com morangos, oferece uma combinação irresistível de sabores intensos e texturas suaves.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/pavlova.jpg" alt="Pavlova">
+                <h3>Pavlova</h3>
+                <p>Uma sobremesa leve e arejada, com base de merengue crocante e interior macio, coberta com um creme de chantilly suave, cerejas e raspas de chocolate. Um equilíbrio perfeito entre o doce e o ácido, ideal para finalizar qualquer refeição.</p>
+            </div>
+            <!-- New Menu Items -->
+            <div class="menu-item">
+                <img src="imagens/tartelette.jpg" alt="Tartelette de Frutas">
+                <h3>Tartelette de Frutas</h3>
+                <p>Pequenas tortas individuais com uma base crocante, recheadas com um creme de baunilha e cobertas com uma seleção de frutas frescas. Uma combinação deliciosa e visualmente atraente para quem ama frutas.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/croissant.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p>Um croissant tradicional francês, leve e amanteigado, com camadas perfeitamente folhadas. Ideal para um café da manhã sofisticado ou uma pausa deliciosa durante o dia.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/painchocolat.jpg" alt="Pain au Chocolat">
+                <h3>Pain au Chocolat</h3>
+                <p>Uma iguaria clássica, feita com uma massa folhada rica e recheada com pedaços de chocolate meio amargo. Uma opção irresistível para os amantes de chocolate e massa folhada.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="section">
+            <h2>Galeria</h2>
+            <p>Explore nossa galeria para ver mais sobre o ambiente da nossa cafeteria e alguns dos nossos pratos e bebidas. Cada imagem captura um pouco da essência de <strong>La Belle Éclair</strong>.</p>
+            <div class="menu-item">
+                <img src="imagens/interior.jpg" alt="Ambiente da Cafeteria">
+                <h3>Ambiente Aconchegante</h3>
+                <p>Nosso espaço é projetado para criar uma experiência acolhedora, com uma decoração que combina vintage e conforto.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/cafe.jpg" alt="Café Artesanal">
+                <h3>Café Artesanal</h3>
+                <p>Oferecemos uma variedade de cafés artesanais preparados com grãos selecionados para garantir a melhor qualidade e sabor.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/docesfinos.jpg" alt="Doces Finos">
+                <h3>Doces Finos</h3>
+                <p>Uma seleção de doces finos preparados com os melhores ingredientes, perfeitos para qualquer ocasião especial.</p>
+            </div>
+            <div class="menu-item">
+                <img src="imagens/eventos.jpg" alt="Eventos Privados">
+                <h3>Eventos Privados</h3>
+                <p>Nosso espaço está disponível para eventos privados, oferecendo um ambiente exclusivo e acolhedor para celebrar momentos especiais.</p>
+            </div>
+        </section>
+
+        <section id="eventos" class="section">
+            <h2>Eventos</h2>
+            <p>No <strong>La Belle Éclair</strong>, realizamos eventos especiais ao longo do ano, incluindo degustações, workshops de confeitaria, e noites temáticas. Confira nosso calendário de eventos e participe de momentos únicos conosco!</p>
+            <p><strong>Próximos Eventos:</strong></p>
+            <ul>
+                <li>Workshop de Macarons - 15 de Setembro</li>
+                <li>Noite Francesa - 20 de Outubro</li>
+                <li>Degustação de Cafés Especiais - 5 de Novembro</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <p>Estamos localizados em:</p>
+            <p><strong>Endereço:</strong> Rua dos Pinheiros, 1421, Vila Aurora</p>
+            <p><strong>Telefone:</strong> (11) 3071-5926</p>
+            <p><strong>Email:</strong> contato@labelleeclair.com.br</p>
+            <p>Siga-nos nas redes sociais para ficar por dentro das novidades e promoções:</p>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 La Belle Éclair. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
+
